@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T2 Formulario By Hana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="card centerCard">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="assets/img/wallpaper.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4 center"><h4>Conversor de temperatura</h4></span>
+          <br>
+          <button class="btn waves-effect waves-light center activator pulse" type="submit" name="action">Ingresar al sistema</button>
+        </div>
+        <div class="card-reveal">
+            <img class="card-title grey-text center z-depth-2" style="width: 97%;" src="assets/img/subdva.jfif"/>
+            <br>
+            <div class="row">
+                <div class="col s12">
+                  <div class="card-panel">
+                    <div class="row">
+                      <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input placeholder="Temperature" id="txtTemp" type="text" class="validate">
+                              <label for="number">Temperature</label>
+                            </div>
+                          </div>
+                      </form>
+                    </div>
+                    
+                    <!-- Menu Origin -->
+                    <div class="input-field col s12 m6">
+                      <select id="tempOrigin" class="icons">
+                        <option value="1" disabled selected>Choose your option</option>
+                        <option value="2" data-icon="assets/img/celsius.png" class="circle">Celsius</option>
+                        <option value="3" data-icon="assets/img/farenheit.png" class="circle">Farenheit</option> 
+                        <option value="4" data-icon="assets/img/kelvin.png" class="circle">Kelvin</option>
+                        <option value="5" data-icon="assets/img/rankine.jpg" class="circle">Rankine</option>
+                      </select>
+                      <label>Temperature Origin</label>
+                    </div>
+                    <!-- Menu Select -->
+
+                    <!-- Menu Destiny -->
+                    <div class="input-field col s12 m6">
+                      <select id="tempDestiny" class="icons">
+                        <option value="1" disabled selected>Choose your option</option>
+                        <option value="2" data-icon="assets/img/celsius.png" class="circle">Celsius</option>
+                        <option value="3" data-icon="assets/img/farenheit.png" class="circle">Farenheit</option>
+                        <option value="4" data-icon="assets/img/kelvin.png" class="circle">Kelvin</option>
+                        <option value="5" data-icon="assets/img/rankine.jpg" class="circle">Rankine</option>
+                      </select>
+                      <label>Temperature Destiny</label>
+                    </div>
+                    <!-- Menu Select -->
+
+                    <div class="row">
+                        <button class="btn waves-effect waves-light center" id="btnAccept" type="submit" name="action">Convertir</button>
+                    </div>
+
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input placeholder="Temperature" id="txtResult" type="text" class="validate" value="" disabled>
+                        <label for="number">Result</label>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+</body>
+<footer>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</footer>
+</html>

@@ -1,0 +1,23 @@
+.centerCard {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.inputColor {
+    color: white;
+}
+
+.btn {
+    background-color: #FF5AA7;
+}
+
+.btn:hover {
+    background-color: #A32147;
+}
